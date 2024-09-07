@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/calculator_2374367.png" />
+    <title>My-Calculator Web-App | Watuulo-Richard</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="text-center mt-5">
+        <h2 class="fw-bolder">My-Calculator Web-App | Watuulo-Richard</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="" class="border border-2 border-dark rounded-2 p-5 my-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="my-2">
+                  <input type="text" name="display" class="form-control border border-2 border-dark" placeholder="0">
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="">
+                  <input type="button" value="AC" onclick="display.value = '' " class="btn btn-dark btn-lg w-100">
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div>
+                  <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1) " class="btn btn-dark btn-lg w-100">
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div>
+                  <input type="button" value="." onclick="display.value += '.' " class="btn btn-dark btn-lg w-100">
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div>
+                  <input type="button" value="/" onclick="display.value += '/' " class="btn btn-dark btn-lg w-100">
+                </div>
+              </div>
+    
+              <!-- Row - Two -->
+              <div class="col-md-3 mb-2">
+                <input type="button" value="7" onclick="display.value += '7' " class="btn btn-dark btn-lg w-100">
+              </div>
+              <div class="col-md-3 mb-2">
+                <input type="button" value="8" onclick="display.value += '8' " class="btn btn-dark btn-lg w-100">
+              </div>
+              <div class="col-md-3 mb-2">
+                <input type="button" value="9" onclick="display.value += '9' " class="btn btn-dark btn-lg w-100">
+              </div>
+              <div class="col-md-3 mb-2">
+                <input type="button" value="*" onclick="display.value += '*' " class="btn btn-dark btn-lg w-100">
+              </div>
+    
+              <!-- Row Three -->
+             <div class="col-md-3 mb-2">
+              <input type="button" value="4" onclick="display.value += '4' " class="btn btn-dark btn-lg w-100">
+             </div>
+             <div class="col-md-3 mb-2">
+              <input type="button" value="5" onclick="display.value += '5' " class="btn btn-dark btn-lg w-100">
+             </div>
+             <div class="col-md-3 mb-2">
+              <input type="button" value="6" onclick="display.value += '6' " class="btn btn-dark btn-lg w-100">
+             </div>
+             <div class="col-md-3 mb-2">
+              <input type="button" value="-" onclick="display.value += '-' " class="btn btn-dark btn-lg w-100">
+             </div>
+    
+             <!-- Row-Four -->
+             <div class="col-md-3 mb-2">
+              <input type="button" value="1" onclick="display.value += '1' " class="btn btn-dark btn-lg w-100">
+             </div>
+             <div class="col-md-3 mb-2">
+              <input type="button" value="2" onclick="display.value += '2' " class="btn btn-dark btn-lg w-100">
+             </div>
+             <div class="col-md-3 mb-2">
+              <input type="button" value="3" onclick="display.value += '3' " class="btn btn-dark btn-lg w-100">
+             </div>
+             <div class="col-md-3 mb-2">
+              <input type="button" value="+" onclick="display.value += '+' " class="btn btn-dark btn-lg w-100">
+             </div>
+    
+             <!-- Row-Five -->
+            <div class="col-md-3 mb-2">
+              <input type="button" value="00" onclick="display.value += '00' " class="btn btn-dark btn-lg w-100">
+            </div>
+            <div class="col-md-3 mb-2">
+              <input type="button" value="0" onclick="display.value += '0' " class="btn btn-dark btn-lg w-100">
+            </div>
+            <div class="col-md-3 mb-2">
+              <input type="button" value="=" onclick="display.value = eval(display.value)" class="btn btn-dark btn-lg w-100">
+            </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="">
+            <img src="./images/undraw_calculator_re_alsc.svg" alt="..." class="img-fluid mt-5">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
